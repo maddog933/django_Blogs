@@ -8,9 +8,16 @@
 </head>
 
 <body>
-    <header>
-        <h1><a href="{% url 'home' %}">Django blog</a></h1>
-    </header>
+    <div>
+        <header>
+            <div class="nav-left">
+                <h1><a href="{% url 'home' %}">Django blog</a></h1>
+            </div>
+            <div>
+                <a href="{% url 'post_new' %}">+ New Blog Post</a>
+            </div>
+        </header>
+    </div>
     <div>
         {% block content %}
         {% endblock content %}
